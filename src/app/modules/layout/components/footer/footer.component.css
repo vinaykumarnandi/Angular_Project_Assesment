@@ -1,0 +1,13 @@
+.example-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }

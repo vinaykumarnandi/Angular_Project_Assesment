@@ -1,0 +1,31 @@
+<mat-card class="occupy" style="background-color: whitesmoke;">
+  <form #addUserForm="ngForm" (ngSubmit)="onSubmit(addUserForm.value)">
+    <mat-card-header>
+      Add User
+    </mat-card-header>
+    <mat-card-actions>
+      <button>Save</button>
+      <button mat-button (click)="cancel()">Cancel</button>
+    </mat-card-actions>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-card-content>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName">FirstName</label>
+          <input name="firstName" type="name" class="form-control" id="firstName" ngModel>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastName">LastName</label>
+          <input name="lastName" type="name" class="form-control" id="lastName" ngModel>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input name="email" type="email" class="form-control" id="email" ngModel>
+        </div>
+      </div>
+    </mat-card-content>
+  </form>
+</mat-card>

@@ -1,0 +1,27 @@
+<mat-card class="occupy" style="background-color: whitesmoke;">
+  <form #addProjectForm="ngForm" (ngSubmit)="onSubmit(addProjectForm.value)">
+    <mat-card-header>
+      Add Project
+    </mat-card-header>
+    <mat-card-actions>
+      <!-- <button mat-button (click)="saveProject()">Save</button> -->
+      <button>Save</button>
+      <button mat-button (click)="cancel()">Cancel</button>
+    </mat-card-actions>
+    <mat-divider></mat-divider>
+    <br>
+    <mat-card-content>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="projectName">Project Name</label>
+          <input name="projectName" class="form-control" id="projectName" ngModel>
+        </div>
+        <br>
+        <div class="form-group col-md-6">
+          <label for="projectDetails">Project Details</label>
+          <input name="projectDetails" class="form-control" id="projectDetails" ngModel>
+        </div>
+      </div>
+    </mat-card-content>
+  </form>
+</mat-card>

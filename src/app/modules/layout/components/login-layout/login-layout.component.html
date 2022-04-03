@@ -1,0 +1,18 @@
+<app-header> </app-header>
+
+    <mat-card class="example-card centered" style="border-style: solid; border-width: medium;">
+        <mat-card-title>Enter Credentials</mat-card-title>
+        <br>
+        <mat-card-content>
+            <mat-label>Username : </mat-label>
+            <input type="input">
+            <br> <br>
+            <mat-label>Password : </mat-label>
+            <input type="password">
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+        <mat-card-actions style="align-content: center;">
+            <button style="position: relative;" mat-button-raised color="primary" (click)="validateAndLogin()">Login</button>
+        </mat-card-actions>
+    </mat-card>
+<app-footer></app-footer>

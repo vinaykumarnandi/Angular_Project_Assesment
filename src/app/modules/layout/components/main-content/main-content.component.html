@@ -1,0 +1,26 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+            <mat-list>
+                <h3 mat-subheader>App Menu</h3>
+                <mat-divider></mat-divider>
+                <mat-list-item routerLink="/home/user" [routerLinkActive]="['is-active']">
+                    User
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item routerLink="/home/project" [routerLinkActive]="['is-active']">
+                    Project
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item routerLink="/home/task" [routerLinkActive]="['is-active']">
+                    Task
+                </mat-list-item>
+                <mat-divider></mat-divider>
+            </mat-list>
+        
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet>
+        </router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

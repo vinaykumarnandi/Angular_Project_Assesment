@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+.mat-card.scrollable-content mat-card-content {
+  overflow-y: auto;
+}
+
+.mat-card-content {
+  border: 2px solid rgb(236, 241, 243);
+}
+
+.mat-card {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: whitesmoke;
+}
+
+.mat-card.scrollable-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
